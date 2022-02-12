@@ -52,10 +52,10 @@ if($_POST) {
         $recipient = "jnokku@gmail.com";
     }
     else if($concerned_department == "technical support") {
-        $recipient = "annanokku@gmail.com.com";
+        $recipient = "anna@thethriftingco.com";
     }
     else {
-        $recipient = "contact@domain.com";
+        $recipient = "anna@thethriftingco.com";
     }
       
     $email_body .= "</div>";
