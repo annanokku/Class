@@ -1,38 +1,120 @@
-
 <html>
 <head>
 	<title>Sustainable Clothing</title>
+	<style>
+      html, body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      }
+      h1 {
+      margin: 0 0 20px;
+      font-weight: 400;
+      color: #1c87c9;
+      }
+      p {
+      margin: 0 0 5px;
+      }
+       .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #1c87c9;
+      }
+      form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #f5f5f5; 
+      background: #f5f5f5; 
+      }
+      .fas {
+      margin: 25px 10px 0;
+      font-size: 72px;
+      color: #fff;
+      }
+      .fa-envelope {
+      transform: rotate(-20deg);
+      }
+      .fa-at , .fa-mail-bulk{
+      transform: rotate(10deg);
+      }
+      input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #1c87c9;
+      outline: none;
+      }
+      input::placeholder {
+      color: #666;
+      }
+      button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #1c87c9; 
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: #2371a0;
+      }    
+      @media (min-width: 568px) {
+      .main-block {
+      flex-direction: row;
+      }
+      .left-part, form {
+      width: 50%;
+      }
+      .fa-envelope {
+      margin-top: 0;
+      margin-left: 20%;
+      }
+      .fa-at {
+      margin-top: -10%;
+      margin-left: 65%;
+      }
+      .fa-mail-bulk {
+      margin-top: 2%;
+      margin-left: 28%;
+      }
+      }
+      </style>
 </head>
 <body>
-<h1 style="color:blue;">Anna Nokku Portfolio</h1>
-
-<p style="color:red;">Welcome</p>
-<p style="color:red;">Provide Feedback</p>
+<h1>Feedback: Anna Nokku Portfolio</h1>
 <form action="contact.php" method="post">
   <div class="elem-group">
     <label for="name">Your Name</label>
-    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    <input type="text" id="name" name="visitor_name" placeholder="Grace Kelly" pattern=[A-Z\sa-z]{3,20} required>
   </div>
   <div class="elem-group">
     <label for="email">Your E-mail</label>
-    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    <input type="email" id="email" name="visitor_email" placeholder="grace.kelly@email.com" required>
   </div>
   <div class="elem-group">
-    <label for="department-selection">Choose Concerned Department</label>
+    <label for="department-selection">Choose a option</label>
     <select id="department-selection" name="concerned_department" required>
-        <option value="">Select a Department</option>
-        <option value="billing">Billing</option>
-        <option value="marketing">Marketing</option>
-        <option value="technical support">Technical Support</option>
+        <option value="">Select a Option</option>
+        <option value="billing">MSU</option>
+        <option value="marketing">ClassM472</option>
+        <option value="technical support">Other</option>
     </select>
   </div>
   <div class="elem-group">
-    <label for="title">Reason For Contacting Us</label>
+    <label for="title">Reason For Contacting</label>
     <input type="text" id="title" name="email_title" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
   </div>
+  
   <div class="elem-group">
-    <label for="message">Write your message</label>
-    <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+    <label for="message">Type your message</label>
+    <textarea id="message" name="visitor_message" placeholder="Please type few suggestions" required></textarea>
   </div>
   <button type="submit">Send Message</button>
 </form> 
@@ -40,3 +122,5 @@
 
 </body>
 </html>
+
+
