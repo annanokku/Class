@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+</head>
+<body>
+
+<h2 style= "color:DodgerBlue" ; "font-size:60px" >The Thrifting Co</h2>
+
+<div><p title="I'm a tooltip">Sustainabile Fasion at Affordable Prices</p></div>
+
+</body>
+</html>
+
+
