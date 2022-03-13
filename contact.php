@@ -48,7 +48,7 @@ if($_POST) {
     if($concerned_department == "Catalog") {
         $recipient = "nokkuann@msu.edu";
     }
-    else if($concerned_department == "M742") {
+    else if($concerned_department == "M472") {
         $recipient = "nokkuann@msu.edu";
     }
     else {
