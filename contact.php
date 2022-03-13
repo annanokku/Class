@@ -45,17 +45,14 @@ if($_POST) {
                         </div>";
     }
       
-    if($concerned_department == "billing") {
-        $recipient = "bina@sharonrose.us";
+    if($concerned_department == "Catalog") {
+        $recipient = "nokkuann@msu.edu";
     }
-    else if($concerned_department == "marketing") {
-        $recipient = "jnokku@gmail.com";
-    }
-    else if($concerned_department == "technical support") {
-        $recipient = "anna@thethriftingco.com";
+    else if($concerned_department == "M742") {
+        $recipient = "nokkuann@msu.edu";
     }
     else {
-        $recipient = "anna@thethriftingco.com";
+        $recipient = "jnokku@gmail.com";
     }
       
     $email_body .= "</div>";
