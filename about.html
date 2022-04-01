@@ -1,6 +1,19 @@
-<html> 
- <head>
+<!DOCTYPE html>
+<html>
 <style>
+h1 {
+  color: blue;
+  font-size: 30px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+}
+h2 {
+  color: green;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Lucida Handwriting", "Courier New", cursive;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -31,22 +44,42 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
-  body {
-  background-image: url("IMG_2810.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
-  background-size: 100%;
+  
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 </style>
-</head>
-<body> 
- <ul>
+<body>
+
+<ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="page3.html">Catalog</a></li>
   <li><a href="contact.html">Contact</a></li>
   <li style="float:right"><a class="active" href="about.html">About</a></li>
 </ul>
+
 <h1 style="font-family:Brush Script MT;"><center>Anna Nokku</center></h1> 
 <p style="font-family:courier;"><center>Hello!<center></p> 
 <p style="font-family:courier;"><center>My name is Anna, and I am currently a Senior at Michigan State University. I started this small business the summer after my first year of college, and it has been an incredible journey. I began by posting a few items every week to posting anywhere from 50-100 items a week!</center></p> 
